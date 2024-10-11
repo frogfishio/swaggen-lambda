@@ -1,18 +1,26 @@
 {
   "name": "@frogfish/swaggen-lambda",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.6",
+  "description": "Swaggen Lambda Capabilities",
+  "main": "capability-factory.js",
+  "types": "capability-factory.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "gulp && cd dist && npm publish --access public"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/aws-sdk": "^0.0.42",
-    "@types/node": "^22.7.5"
-  },
+  "author": "El'Diablo",
+  "license": "GPL-3.0-only",
   "dependencies": {
     "aws-sdk": "^2.1691.0"
+  },
+  "devDependencies": {
+    "@frogfish/swaggen-types": "^0.0.15",
+    "@types/aws-sdk": "^0.0.42",
+    "@types/node": "^22.7.5",
+    "gulp": "^5.0.0",
+    "gulp-bump": "^3.2.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-json-transform": "^0.5.0",
+    "gulp-typescript": "^6.0.0-alpha.1"
   }
 }
